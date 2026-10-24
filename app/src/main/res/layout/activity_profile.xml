@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="MY PROFILE"
-        android:textSize="40sp"
+        android:textSize="44sp"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_marginBottom="32dp"
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Username"
-        android:textSize="16sp"
+        android:textSize="24sp"
         android:gravity="center"
         android:layout_marginBottom="12dp" />
 
@@ -34,15 +34,63 @@
         android:layout_height="wrap_content"
         android:text="BS Information Technology"
         android:gravity="center"
-        android:textSize="16sp"
+        android:textSize="24sp"
         android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#F44336"
+        android:padding="12dp"
+        android:text="Generate Numbers"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="10dp">
+
+    <!-- I used visibility - gone for the linear layout here
+         because I want to hide first everything since there
+         are no numbers yet, and for the margin to not take
+         effect yet. -->
+
+        <TextView
+            android:id="@+id/tvNum1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvNum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvNum3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGOUT"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:padding="12dp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center" />
 </LinearLayout>

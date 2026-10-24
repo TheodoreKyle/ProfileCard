@@ -2,7 +2,9 @@ package com.example.profilecard
 
 import android.app.Dialog
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -14,8 +16,30 @@ class ProfileActivity : AppCompatActivity() {
         val username = intent.getStringExtra("username")
         val tvUsername = findViewById<TextView>(R.id.tvUser)
         tvUsername.text = username
-        val btnLogout = findViewById<Button>(R.id.btnLogout)
 
+        val layout2 = findViewById<LinearLayout>(R.id.layout2)
+
+        val btnGenerate = findViewById<Button>(R.id.btnGenerate)
+        val tvNum1 = findViewById<TextView>(R.id.tvNum1)
+        val tvNum2 = findViewById<TextView>(R.id.tvNum2)
+        val tvNum3 = findViewById<TextView>(R.id.tvNum3)
+
+        btnGenerate.setOnClickListener {
+            layout2.visibility = View.VISIBLE
+            /* Only when the Generate Numbers button is clicked
+               will the Visibility of the LinearLayout is true/seen */
+
+            val num1 = (0..999999).random()
+            val num2 = (0..999999).random()
+            val num3 = (0..999999).random()
+            // For larger numbers
+
+            tvNum1.text = "First Number: " + num1.toString()
+            tvNum2.text = "Second Number: " + num2.toString()
+            tvNum3.text = "Third Number: " + num3.toString()
+        }
+
+        val btnLogout = findViewById<Button>(R.id.btnLogout)
         btnLogout.setOnClickListener {
             showLogoutDialog()
         }
