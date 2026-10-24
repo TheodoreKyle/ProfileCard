@@ -29,14 +29,12 @@ class ProfileActivity : AppCompatActivity() {
             /* Only when the Generate Numbers button is clicked
                will the Visibility of the LinearLayout is true/seen */
 
-            val num1 = (0..999999).random()
-            val num2 = (0..999999).random()
-            val num3 = (0..999999).random()
+            val numbers = List(3) { (0..999999).random() }
             // For larger numbers
 
-            tvNum1.text = "First Number: " + num1.toString()
-            tvNum2.text = "Second Number: " + num2.toString()
-            tvNum3.text = "Third Number: " + num3.toString()
+            tvNum1.text = "First Number: ${numbers[0]}"
+            tvNum2.text = "Second Number: ${numbers[1]}"
+            tvNum3.text = "Third Number: ${numbers[2]}"
         }
 
         val btnLogout = findViewById<Button>(R.id.btnLogout)
