@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "951765326430",
+    "project_id": "profilecard-a6da0",
+    "storage_bucket": "profilecard-a6da0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951765326430:android:b7cd184ce040cf09fe32cf",
+        "android_client_info": {
+          "package_name": "com.example.profilecard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3LoWQ-YHJE8CPfBnajZ-6GbNQ976j76w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
